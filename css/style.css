@@ -1,0 +1,31 @@
+/* Created by: Lily C
+* Created on: 05/03/2023
+* This CSS file defines the style for index.html
+* Unit5-01-HTML-NumberDisplay
+*/
+
+body {
+  background-color: pink;
+  padding-left: 20px; padding-right: 20px;
+}
+
+h1 {
+  background-color: rgb(151 239 233);
+  color: hsl(345deg 95% 71%);
+  padding: 40px;
+  text-align: center;
+}
+
+h3 {
+  color: #F26A8D;
+}
+
+p {
+  background-color: #CBEEF3;
+  color: #000;
+}
+
+div {
+  background-color: #CBEEF3;
+  color: #000;
+}

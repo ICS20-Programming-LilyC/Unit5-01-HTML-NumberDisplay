@@ -1,1 +1,64 @@
-<DOCTYPE html> 
+<DOCTYPE html>
+<html lang="en-ca">
+  <head>
+
+    <!--Meta data-->
+    <meta charset="utf-8">
+    <meta name="description" content="Number Display webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Lily C">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <!--Stylesheet CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--MDL theme-->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+
+    <!-- Title -->
+    <title>Number Display Webpage</title>
+  </head>
+  <body>
+
+    <!--Link to JS file-->
+    <script src="./js/script.js"></script>
+
+    <!--Header-->
+    <h1>Number Display Webpage with Javascript</h1>
+    
+    <!--Text-->
+    <h3>Welcome to my number display webpage!</h3>
+    <center>
+    <p>My webpage allows you to choose a mininmun number and a maxiumnm number and determine the range of numbers between your input.</p>
+      </center>
+    <h3>Your Input:</h3>
+
+    <!--Form for user input-->
+    <form action="javascript:numbersSent()">
+      <label for="min number">Enter a minimum number:</label>
+      <input type="number" step="1" id="min-number" placeholder="Minimum">
+      <br>
+      <br>
+      <label for="max number">Enter a maximum number:</label>
+      <input type="number" step="1" id="max-number" placeholder="Maximum">
+      <br>
+      <br>
+      <input type="submit" value="Submit Numbers" id="styled-button">
+    </form>
+
+    <!--Div results for the number ranges that will be displayed-->
+    <div id="results"></div>
+
+    <!--Image-->
+    <br>
+    <center>
+    <img src = "./images/randomNumbers.png" alt="Numbers" width="500" length="400">
+    </center>
+  </body>
+</html>
