@@ -8,32 +8,33 @@
 
 function numbersSent() {
   
-  // Initializing the numbers and message variable to an empty string
+  // Establishing empty variables for numbers and message (for later).
   let numbers = "";
   let message = "";
 
-  //getting the user values for the minimum and maximum numbers
+  // Getting the minimum and maxiumum input.
   let minNumber = parseInt(document.getElementById("min-number").value);
   let maxNumber = parseInt(document.getElementById("max-number").value);
 
-  //initializing the counter variable to the minNumber
+  // Initializing counter variable to minNumber.
   let counter = minNumber;
 
-  //if statement checks if minNumber > maxNumber (there is an error)
+  // If statement to make sure that maximum is greater than minumum.
   if (minNumber > maxNumber) {
-    message = "Ensure that minimum value is less than or equal to maximum value.";
+    message = "Please make sure that your minimum value is less than or equal your to maximum value.";
   }
     
-  //else, complete while loop to create list of even numbers between min and max
+  // Else, make list of numbers.
   else {
-    //while loop that specifies the range, so the code within the loop executes as long as the counter is greater than or equal to the minimum and less than or equal to the maximum
+
+  // While loop that provides the range of numbers determined by user.
     while ((counter >= minNumber) && (counter <= maxNumber)) {
       numbers = numbers + counter + "<br>";
       counter = counter + 1;
-      message = "Here are all the numbers between the minimum and maximum numbers that you entered:<br><br>" + numbers;
+      message = "Below are all the numbers between your minimum and your maximum numbers that you entered:<br><br>" + numbers;
     }
   }
 
-  //displaying the results (the range of even numbers) back to the user
+  // Displaying the results (the range of numbers) back to the user
   document.getElementById("results").innerHTML = message;
 }
