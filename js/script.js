@@ -8,26 +8,26 @@
 
 function numbersSent() {
   
-  // Establishing empty variables for numbers and message (for later).
+  // Establishing empty variables for numbers and messages (for later).
   let numbers = "";
   let message = "";
 
-  // Getting the minimum and maxiumum input.
+  // Getting the minimum and maximum input.
   let minNumber = parseInt(document.getElementById("min-number").value);
   let maxNumber = parseInt(document.getElementById("max-number").value);
 
   // Initializing counter variable to minNumber.
   let counter = minNumber;
 
-  // If statement to make sure that maximum is greater than minumum.
+  // If statement to make sure that maximum is greater than minimum.
   if (minNumber > maxNumber) {
     message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
     
-  // Else, make list of numbers.
+  // Else, make a list of numbers.
   else {
 
-  // While loop that provides the range of numbers determined by user.
+  // While loop that provides the range of numbers determined by the user.
     while ((counter >= minNumber) && (counter <= maxNumber)) {
       numbers = numbers + counter + "<br>";
       counter = counter + 1;
