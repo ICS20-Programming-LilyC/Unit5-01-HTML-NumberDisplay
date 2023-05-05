@@ -21,7 +21,7 @@ function numbersSent() {
 
   // If statement to make sure that maximum is greater than minumum.
   if (minNumber > maxNumber) {
-    message = "Please make sure that your minimum value is less than or equal your to maximum value.";
+    message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
     
   // Else, make list of numbers.
