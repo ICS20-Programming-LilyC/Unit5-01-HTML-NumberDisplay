@@ -35,6 +35,6 @@ function numbersSent() {
     }
   }
 
-  // Displaying the results (the range of numbers) back to the user
+  // Displaying the results (the range of numbers) back to the user.
   document.getElementById("results").innerHTML = message;
 }
