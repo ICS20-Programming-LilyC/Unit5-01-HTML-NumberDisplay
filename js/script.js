@@ -23,6 +23,10 @@ function numbersSent() {
   if (minNumber > maxNumber) {
     message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
+
+  else if (isEmpty(userMin)) || (isEmpty(userMax)) {
+    message = "Please enter a minimum and maximum value.";
+  }
     
   // Else, make a list of numbers.
   else {
