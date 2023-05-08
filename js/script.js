@@ -24,7 +24,7 @@ function numbersSent() {
     message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
 
-  else if (isEmpty(userMin)) || (isEmpty(userMax)) {
+  else if (isNaN(userMin)) || (isNaN(userMax)) {
     message = "Please enter a minimum and maximum value.";
   }
     
