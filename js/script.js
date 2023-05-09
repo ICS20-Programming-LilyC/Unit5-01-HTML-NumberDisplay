@@ -24,10 +24,11 @@ function numbersSent() {
     message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
 
-  else if (isNaN(userMin)) || (isNaN(userMax)) {
-    message = "Please enter a minimum and maximum value.";
+  //elseif statement to make force user to input two numbers. 
+  else if ((isNaN(minNumber)) || (isNaN(maxNumber))){
+  message = "Ensure that both minimum and maximum numbers are entered.";
   }
-    
+
   // Else, make a list of numbers.
   else {
 
