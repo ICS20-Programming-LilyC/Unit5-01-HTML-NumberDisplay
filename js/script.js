@@ -24,7 +24,7 @@ function numbersSent() {
     message = "Please make sure that your minimum value is less than or equal to your maximum value.";
   }
 
-  //elseif statement to make force user to input two numbers. 
+  // Elseif statement to force the user to input two numbers. 
   else if ((isNaN(minNumber)) || (isNaN(maxNumber))){
   message = "Ensure that both minimum and maximum numbers are entered.";
   }
